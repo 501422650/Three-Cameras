@@ -1,0 +1,5 @@
+
+
+void QF_Init() {
+
+}

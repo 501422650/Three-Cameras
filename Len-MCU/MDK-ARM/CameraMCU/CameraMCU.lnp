@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"cameramcu\startup_stm32f407xx.o"
+"cameramcu\main.o"
+"cameramcu\gpio.o"
+"cameramcu\stm32f4xx_it.o"
+"cameramcu\stm32f4xx_hal_msp.o"
+"cameramcu\stm32f4xx_hal_tim.o"
+"cameramcu\stm32f4xx_hal_tim_ex.o"
+"cameramcu\stm32f4xx_hal_rcc.o"
+"cameramcu\stm32f4xx_hal_rcc_ex.o"
+"cameramcu\stm32f4xx_hal_flash.o"
+"cameramcu\stm32f4xx_hal_flash_ex.o"
+"cameramcu\stm32f4xx_hal_flash_ramfunc.o"
+"cameramcu\stm32f4xx_hal_gpio.o"
+"cameramcu\stm32f4xx_hal_dma_ex.o"
+"cameramcu\stm32f4xx_hal_dma.o"
+"cameramcu\stm32f4xx_hal_pwr.o"
+"cameramcu\stm32f4xx_hal_pwr_ex.o"
+"cameramcu\stm32f4xx_hal_cortex.o"
+"cameramcu\stm32f4xx_hal.o"
+"cameramcu\stm32f4xx_hal_exti.o"
+"cameramcu\system_stm32f4xx.o"
+--strict --scatter "CameraMCU\CameraMCU.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "CameraMCU.map" -o CameraMCU\CameraMCU.axf
